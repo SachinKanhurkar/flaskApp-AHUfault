@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Machine Learning App</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            AHU: Supply Air Temperature: <input type="number" step="any" name="AHU: Supply Air Temperature", placeholder="Temperature in fahrenheit" required/>
+            <br><br>
+            AHU: Supply Air Temperature Set Point: <input type="number" step="any" name="AHU: Supply Air Temperature Set Point", placeholder="Temperature in fahrenheit" required/>
+            <br><br>            
+            AHU: Outdoor Air Temperature: <input type="number" step="any" name="AHU: Outdoor Air Temperature", placeholder="Temperature in fahrenheit" required/>
+            <br><br>
+            AHU: Mixed Air Temperature: <input type="number" step="any" name="AHU: Mixed Air Temperature", placeholder="Temperature in fahrenheit" required/>
+            <br><br>
+            AHU: Return Air Temperature: <input type="number" step="any" name="AHU: Return Air Temperature", placeholder="Temperature in fahrenheit" required/>
+            <br><br>
+            AHU: Supply Air Fan Status: <input type="number" step="1" min="0" max="1" name="AHU: Supply Air Fan Status", placeholder="Supply air fan status; 0-off, 1-on" required/>
+            <br><br>
+            AHU: Return Air Fan Status: <input type="number" step="1" min="0" max="1" name="AHU: Return Air Fan Status", placeholder="Return air fan status; 0-off, 1-on" required/>
+            <br><br>
+            AHU: Supply Air Fan Speed Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Supply Air Fan Speed Control Signal", placeholder="Air fan speed; ranges from 0 to 1; 0 - fan
+            speed is 0%, 1 - fan speed is 100%" required/>
+            <br><br>
+            AHU: Return Air Fan Speed Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Return Air Fan Speed Control Signal", placeholder="Return air fan speed; ranges from 0 to 1; 0 - fan
+            speed is 0%, 1 - fan speed is 100%" required/>
+            <br><br>
+            AHU: Outdoor Air Damper Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Outdoor Air Damper Control Signal", placeholder="Outdoor air damper; ranges from 0 to 1; 0 – damper should be fully closed, 1 – damper should be fully open" required/>
+            <br><br>
+            AHU: Return Air Damper Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Return Air Damper Control Signal", placeholder="Return air damper; ranges from 0 to 1; 0 – damper should be fully closed, 1 – damper should be fully open" required/>
+            <br><br>
+            AHU: Cooling Coil Valve Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Cooling Coil Valve Control Signal", placeholder="cooling coil valve; ranges from 0 to 1; 0 – valve should be fully closed, 1 – valve should be fully open" required/>
+            <br><br>
+            AHU: Heating Coil Valve Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Heating Coil Valve Control Signal", placeholder="heating coil valve; ranges from 0 to 1; 0 – valve should be fully closed, 1 – valve should be fully open" required/>
+            <br><br>
+            AHU: Supply Air Duct Static Pressure Set Point: <input type="number" step="any"   name="AHU: Supply Air Duct Static Pressure Set Point", placeholder="Supply air duct static pressure setpoint in psi" required/>
+            <br><br>
+            AHU: Supply Air Duct Static Pressure: <input type="number" step="any" name="AHU: Supply Air Duct Static Pressure", placeholder="Supply air duct static pressure in psi" required/>
+            <br><br>
+            Occupancy Mode Indicator: <input type="number" step="1" min="0" max="1" name="Occupancy Mode Indicator", placeholder="1-occupied mode, 0-unoccupied mode" required/>
+            <br><br>
+            <button>Run</button>
+        </form>
+        <p style="text-align: center;">{{ output_text }}</p>
+    </body>
+</html>
