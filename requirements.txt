@@ -1,2 +1,9 @@
-Flask==1.1.2
-
+Flask
+joblib
+pandas
+scikit_learn
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
