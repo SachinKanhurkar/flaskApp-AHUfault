@@ -3,8 +3,3 @@ joblib
 pandas
 scikit_learn
 gunicorn
-itsdangerous
-Jinja2
-MarkupSafe
-Werkzeug
-numpy
