@@ -78,7 +78,7 @@ def main():
     else:
         prediction = ""
     if prediction==1:    
-        return render_template("website.html", output_text ="Status: AHU is in fauly mode.")
+        return render_template("website.html", output_text ="Status: AHU is in faulty mode.")
     else:
         return render_template("website.html", output_text =" Status: AHU is working in good condition.")
 
