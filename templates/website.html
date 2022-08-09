@@ -2,10 +2,73 @@
 <html>
     <head>
         <title>Your Machine Learning App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BigMart Sales</title>
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <style>
+          body{
+        text-align:center;
+        background-image: linear-gradient(-90deg, rgb(182, 182, 212), rgb(238, 186, 186));
+      }
+    
+      h1{
+        color:white;
+      }
+      
+      #form{
+        display: grid;
+        grid-row-gap: 20px;
+        width:26%;
+        justify-content:center;
+        padding: 2%;
+        background-color: white;
+        position:relative;
+        left:35%;
+       }
+       input:hover{
+         border: 2px solid blue;
+         border-radius: 8%;
+       }
+      
+      button{
+        margin:0 37% 0 37%; 
+        width: 26%;
+        background-color: rgb(25, 175, 235);
+        border:2px solid rgb(25, 175, 235);
+        color:white;
+        font-weight: 900;
+        border-radius: 8%;
+      }
+      
+      @media(max-width:756px){
+        #form{
+        width:60%;
+        position:relative;
+        left:85%;
+        }
+      }
+      
+      @media(max-width:362px){
+        #form{
+        width:80%;
+        position:relative;
+        left:5%;
+        }
+      }
+      
+        </style>
     </head>
     
     <body>
-        <form name="form", method="POST", style="text-align: center;">
+        <h1 id="title">Air Handling Unit (AHU) Condition Status</h1>
+        <p id="description"></p>
+        <form name="form", method="POST", style="text-align: center;">        
+            <div>
+                <p>Contact Me</p>
+                <a target="_blank" href="https://github.com/SachinKanhurkar"><i class="fab fa-github fa-3x contact-icon" style="size: 20px;"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sachin-kanhurkar-02a07383/"><i class="fab fa-linkedin fa-3x contact-icon"></i></a>
+                 </div>
             <br>
             AHU: Supply Air Temperature: <input type="number" step="any" name="AHU: Supply Air Temperature", placeholder="Temperature in fahrenheit" required/>
             <br><br>
@@ -22,7 +85,7 @@
             AHU: Return Air Fan Status: <input type="number" step="1" min="0" max="1" name="AHU: Return Air Fan Status", placeholder="Return air fan status; 0-off, 1-on" required/>
             <br><br>
             AHU: Supply Air Fan Speed Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Supply Air Fan Speed Control Signal", placeholder="Air fan speed; ranges from 0 to 1; 0 - fan
-            speed is 0%, 1 - fan speed is 100%" required/>
+            speed is 0%, 1 - fan speed is 100%" required/>               
             <br><br>
             AHU: Return Air Fan Speed Control Signal: <input type="number" step="1" min="0" max="1" name="AHU: Return Air Fan Speed Control Signal", placeholder="Return air fan speed; ranges from 0 to 1; 0 - fan
             speed is 0%, 1 - fan speed is 100%" required/>
